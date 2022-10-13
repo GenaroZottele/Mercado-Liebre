@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #ebebeb;
+    margin: 0px;
+}
+header{
+    background-color: #EAC926;
+}
+.encabezado{
+    display: flex;
+    width: 90%;
+    align-self: center;
+    justify-content:space-between;
+    margin-top: 20px;
+    
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 50%;
+    padding-right: 5px;
+}
+.buscador{
+    width: 50%;
+    align-self:center ;
+}
+.buscador input{
+    width: 80%;
+}
+.publicidad{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    align-self: center;
+    margin: 15px;
+}
+.menu{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-self: center;
+}
+.menu div{
+    display: flex;
+
+}
+.menu li {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1259c3;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.burger-menu i{
+    align-items: center;
+    align-content: center;
+    font-size: 20px;
+}
+.banner div img{
+    width: 100%;
+}
+.titulares{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+    margin: 15px;
+}
+.ultimaVista{
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    background-color:  white;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 10px;
+    
+}
+.info{
+    border-top: solid 1px #ebebeb;
+    padding-bottom: 10px;
+    position: relative;
+    padding-top: 10px;
+}
+.descripcion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 15px;
+    
+}
+.cards img{
+    width: 90%;
+    align-self: center;
+    
+}
+.cards i{
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+} 
+.precioDescuento{
+    display: flex;
+}
+
+.precio{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    width: 30%;
+    margin-left: 15px;
+}
+.descuento{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:#39b54a;
+    margin: 0px;
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-self: center;
+    margin-top: 15px;
+    
+}
+.pie i{
+    color:#1259c3 ;
+    font-size: 2em;
+    align-self:center ;
+    margin: 10px;
+}
+.pie h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    align-self:center ;
+    justify-content: flex-start;
+    margin: 0px;
+}
+.pie p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    align-self:center ;
+    text-align: center;
+    margin: 0px;
+}
+.copy{
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+@media (max-width: 361px) {
+    .descripcion{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@media (min-width: 361px) {
+    .cards{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu{
+        display: none;
+    }
+    .ultimaVista{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cards{
+        width: 40%;
+    }
+}
+
+@media (min-width: 769px) {
+    .cards{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu{
+        display: none;
+    }
+    .cards{
+        width: 20%;
+    }
+}
