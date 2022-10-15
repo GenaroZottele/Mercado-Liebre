@@ -1,0 +1,46 @@
+<form action="register.html" method="POST">
+    <div class="container">
+        <h1>Register</h1>
+        <hr>
+        
+        <label for="name"><b>Nombre y Apellido</b></label>
+        <input type="text" placeholder="Nombre y apellido" name="name" id="name" required>
+
+        <label for="user"><b>Usuario</b></label>
+        <input type="text" placeholder="Nombre de usuario" name="user" id="user" required>
+
+        <label for="date"><b>Fecha de Nacimiento</b></label>
+        <input type="date"  name="date" id="date" required>
+
+        <label for="domicilio"><b>Email</b></label>
+        <input type="text" placeholder="Domicilio" name="domicilio" id="domicilio" required>
+
+        <label>Perfil del usuario</label>
+        <label><input type="radio" value="SI"  name="Perfil"> Comprador</label>
+        <label><input type="radio" value="SI"  name="Perfil"> Vendedor</label>
+
+        <label for="intereses">Intereses</label>
+        <label><input type="checkbox" value="Electro"  name="Interes"> Electro</label>
+        <label><input type="checkbox" value="Moda"  name="Interes"> Moda</label>
+        <label><input type="checkbox" value="Hogar"  name="Interes"> Hogar</label>
+        <label><input type="checkbox" value="Jugueteria"  name="Interes"> Jugueteria</label>
+        <label><input type="checkbox" value="Vida sana"  name="Interes"> Vida sana</label>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <hr>
+    
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+    </div>
+  
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
