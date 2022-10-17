@@ -1,31 +1,60 @@
-<form action="register.html" method="POST">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../public/css/style.css">
+
+</head>
+<body class="form">
+  <form action="register.html" method="POST" class="register">
     <div class="container">
-        <h1>Register</h1>
+
         <hr>
         
-        <label for="name"><b>Nombre y Apellido</b></label>
         <input type="text" placeholder="Nombre y apellido" name="name" id="name" required>
 
-        <label for="user"><b>Usuario</b></label>
         <input type="text" placeholder="Nombre de usuario" name="user" id="user" required>
+
+        <input type="email" placeholder="E-mail" name="email" id="email" required >
 
         <label for="date"><b>Fecha de Nacimiento</b></label>
         <input type="date"  name="date" id="date" required>
 
         <label for="domicilio"><b>Email</b></label>
         <input type="text" placeholder="Domicilio" name="domicilio" id="domicilio" required>
+        
+        <label> <b>Perfil del usuario</b> </label>
+        <div class="perfil">
+          <input type="radio" value="SI"  name="Perfil">
+          <label> Comprador</label>
+          <input type="radio" value="SI"  name="Perfil">
+          <label> Vendedor</label>
+        </div>
 
-        <label>Perfil del usuario</label>
-        <label><input type="radio" value="SI"  name="Perfil"> Comprador</label>
-        <label><input type="radio" value="SI"  name="Perfil"> Vendedor</label>
-
-        <label for="intereses">Intereses</label>
-        <label><input type="checkbox" value="Electro"  name="Interes"> Electro</label>
-        <label><input type="checkbox" value="Moda"  name="Interes"> Moda</label>
-        <label><input type="checkbox" value="Hogar"  name="Interes"> Hogar</label>
-        <label><input type="checkbox" value="Jugueteria"  name="Interes"> Jugueteria</label>
-        <label><input type="checkbox" value="Vida sana"  name="Interes"> Vida sana</label>
-
+        <label for="intereses"> <b>Intereses</b> </label>
+        <div class="checkbox">
+          <div>
+            <label><input type="checkbox" value="Electro"  name="Interes"> Electro</label>
+          </div>
+          <div>
+            <label><input type="checkbox" value="Moda"  name="Interes"> Moda</label>
+          </div>
+          <div>
+            <label><input type="checkbox" value="Hogar"  name="Interes"> Hogar</label>
+          </div>
+          <div>
+            <label><input type="checkbox" value="Jugueteria"  name="Interes"> Jugueteria</label>
+          </div>
+            <div>
+              <label><input type="checkbox" value="Vida sana"  name="Interes"> Vida sana</label>
+            </div>
+          
+        </div>
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" id="email" required>
     
@@ -35,12 +64,17 @@
         <label for="psw-repeat"><b>Repeat Password</b></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
         <hr>
-    
-        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-        <button type="submit" class="registerbtn">Register</button>
+        <div class="button">
+          <button type="submit" class="registerbtn">Registrarse</button>
+          <button type="reset" class="limpiar">Limpiar</button>
+        </div>
+
+
     </div>
-  
-    <div class="container signin">
-      <p>Already have an account? <a href="#">Sign in</a>.</p>
-    </div>
+
   </form>
+</body>
+</html>
+
+
+
