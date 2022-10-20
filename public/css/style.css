@@ -116,6 +116,8 @@ nav{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin-left: 15px;
+    margin-top: 15px;
+    color: white;
     
 }
 .cards img{
@@ -139,9 +141,18 @@ nav{
     align-self: center;
     justify-content: center;
     align-items: center;
+    transition:all 0.3s ease-in;
+    
 } 
+.cards :hover i{
+    transform: rotate(-90deg);
+
+}
 .precioDescuento{
     display: flex;
+    margin-top: 5px;
+    margin-left: 15px;
+    
 }
 
 .precio{
@@ -149,14 +160,16 @@ nav{
     font-size: 18px;
     margin: 0px;
     width: 30%;
-    margin-left: 15px;
+
+    flex-grow: 0.3;
+    
 }
 .descuento{
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color:#39b54a;
     margin: 0px;
-    
+    flex-grow: 0.7;
 }
 footer{
     display: flex;
@@ -212,17 +225,18 @@ footer{
     width: 40%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+
     justify-content: center;
 }
 .container input{
-    color: white;
+    background-color: white;
     border: solid 1px #666;
     border-radius: 5px;
     /* align-self: center; */
     width: 100%;
     margin: 10px;
     height: 30px;
+    
 }
 .container label{
     margin: 10px;
@@ -285,6 +299,7 @@ footer{
 
 }
 
+
 @media (max-width: 361px) {
     .descripcion{
         display: none;
@@ -295,7 +310,7 @@ footer{
 }
 
 @media (min-width: 361px) {
-    .cards{
+    .cards:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .burger-menu{
@@ -309,16 +324,42 @@ footer{
     .cards{
         width: 40%;
     }
+    .cuotas{
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    .precio{
+        font-size: auto;
+    }
+    .logo{
+        width: 40%;
+    }
+    .encabezado{
+        width: 70%;
+    }
+
+    .descripcion:hover{
+        color: black;
+    }
+
 }
 
 @media (min-width: 769px) {
-    .cards{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+
     .burger-menu{
         display: none;
     }
     .cards{
-        width: 20%;
+        width: 22%;
+    }
+    .pieRow{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+    .pie{
+        width: 25%;
     }
 }

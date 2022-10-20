@@ -8,26 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/929658e686.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <header>
         <nav>
-            <div class="encabezado">
-                <div class="logo">
-                    <img  src ="../public/images/logo-mercado-liebre.svg" alt="Logo">
+            <div class="cuotas">
+                <div class="encabezado">
+                    <div class="logo">
+                        <a href="/views/home.html"><img  src ="../images/logo-mercado-liebre.svg" alt="Logo"></a>   
+                    </div>
+                    <div class="buscador">
+                        <input type="text" name="buscador" placeholder="Buscar productos, marcas" id="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </div>
-                <div class="buscador">
-                    <input type="text" name="buscador" placeholder="Buscar productos, marcas" id="search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="publicidad">
+                    <p> <i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de crédito</p> 
                 </div>
             </div>
-            <div class="publicidad">
-                <p> <i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de crédito</p> 
-            </div>
-            
             <ul class="menu">
                 <div>
                     <li> <a href="ofertas.html"> Ofertas</a></li>
@@ -37,7 +38,7 @@
                 </div>
                 <div>
                     <li><a href="./register.html"> Creá tu cuenta</a> <i class="fa-solid fa-id-card"></i></li>
-                    <li><a href="vender.html"> Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="login.html"> Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
                     <li><a href="vender.html"> Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
                 </div>
             </ul>
@@ -49,7 +50,7 @@
     <main>
         <section class="banner">
             <div>
-                <img src="../public/images/img-home-banner.jpg" alt="banner">
+                <img src="../images/img-home-banner.jpg" alt="banner">
             </div>
         </section>
         <section>
@@ -57,9 +58,11 @@
         </section>
         <section class="ultimaVista">
             <div class="cards">
-                <img  src ="../public/images/img-cafetera-moulinex.jpg" alt="Imagen de la cafetera">
+                <img  src ="../images/img-cafetera-moulinex.jpg" alt="Imagen de la cafetera">
                 <div class="info">
-                    <i class="fa-solid fa-truck"></i>
+                    <div class="camion">
+                        <i class="fa-solid fa-truck "></i>
+                    </div>
                     <div class="precioDescuento">
                         <p class="precio">$6.770</p>
                         <p class="descuento">40% OFF</p>
@@ -68,7 +71,7 @@
                 </div>
             </div>  
             <div class="cards">
-                <img  src ="../public/images/img-macbook-pro-2019.jpg" alt="Imagen de la Macbook">
+                <img  src ="../images/img-macbook-pro-2019.jpg" alt="Imagen de la Macbook">
                 <div class="info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="precioDescuento">
@@ -79,7 +82,7 @@
                 </div>
             </div> 
             <div class="cards"> 
-                <img  src ="../public/images/img-samsung-galaxy-s10.jpg" alt="Imagen del Samsung Galaxy">
+                <img  src ="../images/img-samsung-galaxy-s10.jpg" alt="Imagen del Samsung Galaxy">
                 <div class="info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="precioDescuento">
@@ -91,7 +94,7 @@
 
             </div> 
             <div class="cards">
-                <img  src ="../public/images/img-tv-samsung-smart.jpg" alt="Imagen del SmartTV">
+                <img  src ="../images/img-tv-samsung-smart.jpg" alt="Imagen del SmartTV">
                 <div class="info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="precioDescuento">
@@ -108,7 +111,7 @@
         </section>
         <section class="ultimaVista">
             <div class="cards">
-                <img  src ="../public/images/img-cafetera-moulinex.jpg" alt="Imagen de la cafetera">
+                <img  src ="../images/img-cafetera-moulinex.jpg" alt="Imagen de la cafetera">
                 <div class="info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="precioDescuento">
@@ -120,7 +123,7 @@
 
             </div>  
             <div class="cards">
-                <img  src ="../public/images/img-macbook-pro-2019.jpg" alt="Imagen de la Macbook">
+                <img  src ="../images/img-macbook-pro-2019.jpg" alt="Imagen de la Macbook">
                 <div class="info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="precioDescuento">
@@ -132,7 +135,7 @@
 
             </div> 
             <div class="cards">
-                <img  src ="../public/images/img-samsung-galaxy-s10.jpg" alt="Imagen del Samsung Galaxy">
+                <img  src ="../images/img-samsung-galaxy-s10.jpg" alt="Imagen del Samsung Galaxy">
                 <div class="info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="precioDescuento">
@@ -144,7 +147,7 @@
 
             </div> 
             <div class="cards">
-                <img  src ="../public/images/img-tv-samsung-smart.jpg" alt="Imagen del SmartTV">
+                <img  src ="../images/img-tv-samsung-smart.jpg" alt="Imagen del SmartTV">
                 <div class="info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="precioDescuento">
@@ -158,28 +161,30 @@
         </section>
     </main>
     <footer>
-        <div class="pie">
-            <i class="fa-solid fa-credit-card"></i>
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin
-            interés con tarjeta o efectivo en puntos de
-            pago. ¡Y siempre es seguro! </p>
-        </div>
-        <div class="pie">
-            <i class="fa-solid fa-gift"></i>
-            <h4>Envío gratis desde $ 2.500</h4>
-            <p>Solo por estar registrad@ en Mercado Liebre 
-            tenés envíos gratis en miles de productos. Es 
-            un beneficio de Mercado Puntos.</p>
-        </div>
-        <div class="pie">
-            <i class="fa-solid fa-user-shield"></i>
-            <h4>Seguridad, de principio a fin</h4>
-            <p>
-            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, 
-            no hay nada que no puedas hacer, porque estás 
-            siempre protegid@.</p>
-            
+        <div class="pieRow">
+            <div class="pie">
+                <i class="fa-solid fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin
+                interés con tarjeta o efectivo en puntos de
+                pago. ¡Y siempre es seguro! </p>
+            </div>
+            <div class="pie">
+                <i class="fa-solid fa-gift"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre 
+                tenés envíos gratis en miles de productos. Es 
+                un beneficio de Mercado Puntos.</p>
+            </div>
+            <div class="pie">
+                <i class="fa-solid fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>
+                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, 
+                no hay nada que no puedas hacer, porque estás 
+                siempre protegid@.</p>
+                
+            </div>
         </div>
         <div>
             <p class="copy">Copyright © 1999-2020 MercadoLiebre S.R.L. </p>
